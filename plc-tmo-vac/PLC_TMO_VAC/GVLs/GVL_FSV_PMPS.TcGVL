@@ -5,7 +5,7 @@
 
 	
 	{attribute 'pytmc' := 'pv: TMO:VAC:FFO:03  '}
-   {attribute 'TcLinkTo' := '.q_xFastFaultOut:=TIIB[CX0_E1A (EL2202)]^Channel 2^Output'}
+   {attribute 'TcLinkTo' := '.q_xFastFaultOut:=TIIB[CX0_E1A (EL2202)]^Channel 1^Output'}
     g_FastFaultOutput3  :   FB_HardwareFFOutput;	//FFO for TV1K4-VFS-1
 	
     {attribute 'pytmc' := 'pv: TMO:VAC:FFO:04  '}
