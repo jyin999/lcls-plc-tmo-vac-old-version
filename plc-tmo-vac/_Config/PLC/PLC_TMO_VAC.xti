@@ -1483,41 +1483,6 @@
 					<Type>BOOL</Type>
 				</Var>
 				<Var>
-					<Name>GVL_Hutch_Gauges.TMO_ROUGH1_GPI_01.i_iPRESS_R</Name>
-					<Comment>
-						<![CDATA[ input Pressure // Link to analog Input]]>
-					</Comment>
-					<Type>INT</Type>
-				</Var>
-				<Var>
-					<Name>GVL_Hutch_Gauges.TMO_ROUGH1_GPI_02.i_iPRESS_R</Name>
-					<Comment>
-						<![CDATA[ input Pressure // Link to analog Input]]>
-					</Comment>
-					<Type>INT</Type>
-				</Var>
-				<Var>
-					<Name>GVL_Hutch_Gauges.TMO_ROUGH1_GPI_03.i_iPRESS_R</Name>
-					<Comment>
-						<![CDATA[ input Pressure // Link to analog Input]]>
-					</Comment>
-					<Type>INT</Type>
-				</Var>
-				<Var>
-					<Name>GVL_Hutch_Gauges.TMO_ROUGH2_GPI_01.i_iPRESS_R</Name>
-					<Comment>
-						<![CDATA[ input Pressure // Link to analog Input]]>
-					</Comment>
-					<Type>INT</Type>
-				</Var>
-				<Var>
-					<Name>GVL_Hutch_Gauges.TMO_ROUGH2_GPI_02.i_iPRESS_R</Name>
-					<Comment>
-						<![CDATA[ input Pressure // Link to analog Input]]>
-					</Comment>
-					<Type>INT</Type>
-				</Var>
-				<Var>
 					<Name>GVL_Hutch_Pumps.MR2K4_KBO_PIP_01.i_iPRESS</Name>
 					<Type>INT</Type>
 				</Var>
@@ -1815,6 +1780,41 @@
 				<Var>
 					<Name>GVL_Hutch_Valves.TMO_ROUGH2_VRC_01.i_xClsLS</Name>
 					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>GVL_Hutch_Gauges.TMO_ROUGH1_GPI_01.i_iPRESS_R</Name>
+					<Comment>
+						<![CDATA[ input Pressure // Link to analog Input]]>
+					</Comment>
+					<Type>INT</Type>
+				</Var>
+				<Var>
+					<Name>GVL_Hutch_Gauges.TMO_ROUGH1_GPI_02.i_iPRESS_R</Name>
+					<Comment>
+						<![CDATA[ input Pressure // Link to analog Input]]>
+					</Comment>
+					<Type>INT</Type>
+				</Var>
+				<Var>
+					<Name>GVL_Hutch_Gauges.TMO_ROUGH1_GPI_03.i_iPRESS_R</Name>
+					<Comment>
+						<![CDATA[ input Pressure // Link to analog Input]]>
+					</Comment>
+					<Type>INT</Type>
+				</Var>
+				<Var>
+					<Name>GVL_Hutch_Gauges.TMO_ROUGH2_GPI_01.i_iPRESS_R</Name>
+					<Comment>
+						<![CDATA[ input Pressure // Link to analog Input]]>
+					</Comment>
+					<Type>INT</Type>
+				</Var>
+				<Var>
+					<Name>GVL_Hutch_Gauges.TMO_ROUGH2_GPI_02.i_iPRESS_R</Name>
+					<Comment>
+						<![CDATA[ input Pressure // Link to analog Input]]>
+					</Comment>
+					<Type>INT</Type>
 				</Var>
 			</Vars>
 			<Vars VarGrpType="2">
@@ -3013,28 +3013,40 @@
 				<Link VarA="FSVTask Inputs^GVL_FS_Devices.TV1K4_VFS_1.i_xVAC_FAULT_Reset" VarB="PlcTask Outputs^GVL_FS_Devices.TV1K4_VFS_Interface.q_xVAC_FAULT_Reset" AutoLink="true"/>
 				<Link VarA="FSVTask Outputs^GVL_FS_Devices.MR3K4_KBO_VFS_1.q_eVFS_State" VarB="PlcTask Inputs^GVL_FS_Devices.MR3K4_KBO_VFS_Interface.i_eVFS_State" AutoLink="true"/>
 				<Link VarA="FSVTask Outputs^GVL_FS_Devices.MR3K4_KBO_VFS_1.q_xMPS_OK" VarB="PlcTask Inputs^GVL_FS_Devices.MR3K4_KBO_VFS_Interface.i_xMPS_OK" AutoLink="true"/>
+				<Link VarA="FSVTask Outputs^GVL_FS_Devices.MR3K4_KBO_VFS_1.q_xTrigger" VarB="PlcTask Inputs^GVL_FS_Devices.MR3K4_KBO_VFS_Interface.i_xTrigger" AutoLink="true"/>
 				<Link VarA="FSVTask Outputs^GVL_FS_Devices.MR3K4_KBO_VFS_1.q_xVAC_FAULT_OK" VarB="PlcTask Inputs^GVL_FS_Devices.MR3K4_KBO_VFS_Interface.i_xVAC_FAULT_OK" AutoLink="true"/>
 				<Link VarA="FSVTask Outputs^GVL_FS_Devices.MR3K4_KBO_VFS_1.q_xVFS_Closed" VarB="PlcTask Inputs^GVL_FS_Devices.MR3K4_KBO_VFS_Interface.i_xVFS_Closed" AutoLink="true"/>
+				<Link VarA="FSVTask Outputs^GVL_FS_Devices.MR3K4_KBO_VFS_1.q_xVFS_Open" VarB="PlcTask Inputs^GVL_FS_Devices.MR3K4_KBO_VFS_Interface.i_xVFS_Open" AutoLink="true"/>
 				<Link VarA="FSVTask Outputs^GVL_FS_Devices.MR4K4_KBO_VFS_1.q_eVFS_State" VarB="PlcTask Inputs^GVL_FS_Devices.MR4K4_KBO_VFS_Interface.i_eVFS_State" AutoLink="true"/>
 				<Link VarA="FSVTask Outputs^GVL_FS_Devices.MR4K4_KBO_VFS_1.q_xMPS_OK" VarB="PlcTask Inputs^GVL_FS_Devices.MR4K4_KBO_VFS_Interface.i_xMPS_OK" AutoLink="true"/>
+				<Link VarA="FSVTask Outputs^GVL_FS_Devices.MR4K4_KBO_VFS_1.q_xTrigger" VarB="PlcTask Inputs^GVL_FS_Devices.MR4K4_KBO_VFS_Interface.i_xTrigger" AutoLink="true"/>
 				<Link VarA="FSVTask Outputs^GVL_FS_Devices.MR4K4_KBO_VFS_1.q_xVAC_FAULT_OK" VarB="PlcTask Inputs^GVL_FS_Devices.MR4K4_KBO_VFS_Interface.i_xVAC_FAULT_OK" AutoLink="true"/>
 				<Link VarA="FSVTask Outputs^GVL_FS_Devices.MR4K4_KBO_VFS_1.q_xVFS_Closed" VarB="PlcTask Inputs^GVL_FS_Devices.MR4K4_KBO_VFS_Interface.i_xVFS_Closed" AutoLink="true"/>
+				<Link VarA="FSVTask Outputs^GVL_FS_Devices.MR4K4_KBO_VFS_1.q_xVFS_Open" VarB="PlcTask Inputs^GVL_FS_Devices.MR4K4_KBO_VFS_Interface.i_xVFS_Open" AutoLink="true"/>
 				<Link VarA="FSVTask Outputs^GVL_FS_Devices.TV1K4_VFS_1.q_eVFS_State" VarB="PlcTask Inputs^GVL_FS_Devices.TV1K4_VFS_Interface.i_eVFS_State" AutoLink="true"/>
 				<Link VarA="FSVTask Outputs^GVL_FS_Devices.TV1K4_VFS_1.q_xMPS_OK" VarB="PlcTask Inputs^GVL_FS_Devices.TV1K4_VFS_Interface.i_xMPS_OK" AutoLink="true"/>
+				<Link VarA="FSVTask Outputs^GVL_FS_Devices.TV1K4_VFS_1.q_xTrigger" VarB="PlcTask Inputs^GVL_FS_Devices.TV1K4_VFS_Interface.i_xTrigger" AutoLink="true"/>
 				<Link VarA="FSVTask Outputs^GVL_FS_Devices.TV1K4_VFS_1.q_xVAC_FAULT_OK" VarB="PlcTask Inputs^GVL_FS_Devices.TV1K4_VFS_Interface.i_xVAC_FAULT_OK" AutoLink="true"/>
 				<Link VarA="FSVTask Outputs^GVL_FS_Devices.TV1K4_VFS_1.q_xVFS_Closed" VarB="PlcTask Inputs^GVL_FS_Devices.TV1K4_VFS_Interface.i_xVFS_Closed" AutoLink="true"/>
+				<Link VarA="FSVTask Outputs^GVL_FS_Devices.TV1K4_VFS_1.q_xVFS_Open" VarB="PlcTask Inputs^GVL_FS_Devices.TV1K4_VFS_Interface.i_xVFS_Open" AutoLink="true"/>
 				<Link VarA="PlcTask Inputs^GVL_FS_Devices.MR3K4_KBO_VFS_Interface.i_eVFS_State" VarB="FSVTask Outputs^GVL_FS_Devices.MR3K4_KBO_VFS_1.q_eVFS_State" AutoLink="true"/>
 				<Link VarA="PlcTask Inputs^GVL_FS_Devices.MR3K4_KBO_VFS_Interface.i_xMPS_OK" VarB="FSVTask Outputs^GVL_FS_Devices.MR3K4_KBO_VFS_1.q_xMPS_OK" AutoLink="true"/>
+				<Link VarA="PlcTask Inputs^GVL_FS_Devices.MR3K4_KBO_VFS_Interface.i_xTrigger" VarB="FSVTask Outputs^GVL_FS_Devices.MR3K4_KBO_VFS_1.q_xTrigger" AutoLink="true"/>
 				<Link VarA="PlcTask Inputs^GVL_FS_Devices.MR3K4_KBO_VFS_Interface.i_xVAC_FAULT_OK" VarB="FSVTask Outputs^GVL_FS_Devices.MR3K4_KBO_VFS_1.q_xVAC_FAULT_OK" AutoLink="true"/>
 				<Link VarA="PlcTask Inputs^GVL_FS_Devices.MR3K4_KBO_VFS_Interface.i_xVFS_Closed" VarB="FSVTask Outputs^GVL_FS_Devices.MR3K4_KBO_VFS_1.q_xVFS_Closed" AutoLink="true"/>
+				<Link VarA="PlcTask Inputs^GVL_FS_Devices.MR3K4_KBO_VFS_Interface.i_xVFS_Open" VarB="FSVTask Outputs^GVL_FS_Devices.MR3K4_KBO_VFS_1.q_xVFS_Open" AutoLink="true"/>
 				<Link VarA="PlcTask Inputs^GVL_FS_Devices.MR4K4_KBO_VFS_Interface.i_eVFS_State" VarB="FSVTask Outputs^GVL_FS_Devices.MR4K4_KBO_VFS_1.q_eVFS_State" AutoLink="true"/>
 				<Link VarA="PlcTask Inputs^GVL_FS_Devices.MR4K4_KBO_VFS_Interface.i_xMPS_OK" VarB="FSVTask Outputs^GVL_FS_Devices.MR4K4_KBO_VFS_1.q_xMPS_OK" AutoLink="true"/>
+				<Link VarA="PlcTask Inputs^GVL_FS_Devices.MR4K4_KBO_VFS_Interface.i_xTrigger" VarB="FSVTask Outputs^GVL_FS_Devices.MR4K4_KBO_VFS_1.q_xTrigger" AutoLink="true"/>
 				<Link VarA="PlcTask Inputs^GVL_FS_Devices.MR4K4_KBO_VFS_Interface.i_xVAC_FAULT_OK" VarB="FSVTask Outputs^GVL_FS_Devices.MR4K4_KBO_VFS_1.q_xVAC_FAULT_OK" AutoLink="true"/>
 				<Link VarA="PlcTask Inputs^GVL_FS_Devices.MR4K4_KBO_VFS_Interface.i_xVFS_Closed" VarB="FSVTask Outputs^GVL_FS_Devices.MR4K4_KBO_VFS_1.q_xVFS_Closed" AutoLink="true"/>
+				<Link VarA="PlcTask Inputs^GVL_FS_Devices.MR4K4_KBO_VFS_Interface.i_xVFS_Open" VarB="FSVTask Outputs^GVL_FS_Devices.MR4K4_KBO_VFS_1.q_xVFS_Open" AutoLink="true"/>
 				<Link VarA="PlcTask Inputs^GVL_FS_Devices.TV1K4_VFS_Interface.i_eVFS_State" VarB="FSVTask Outputs^GVL_FS_Devices.TV1K4_VFS_1.q_eVFS_State" AutoLink="true"/>
 				<Link VarA="PlcTask Inputs^GVL_FS_Devices.TV1K4_VFS_Interface.i_xMPS_OK" VarB="FSVTask Outputs^GVL_FS_Devices.TV1K4_VFS_1.q_xMPS_OK" AutoLink="true"/>
+				<Link VarA="PlcTask Inputs^GVL_FS_Devices.TV1K4_VFS_Interface.i_xTrigger" VarB="FSVTask Outputs^GVL_FS_Devices.TV1K4_VFS_1.q_xTrigger" AutoLink="true"/>
 				<Link VarA="PlcTask Inputs^GVL_FS_Devices.TV1K4_VFS_Interface.i_xVAC_FAULT_OK" VarB="FSVTask Outputs^GVL_FS_Devices.TV1K4_VFS_1.q_xVAC_FAULT_OK" AutoLink="true"/>
 				<Link VarA="PlcTask Inputs^GVL_FS_Devices.TV1K4_VFS_Interface.i_xVFS_Closed" VarB="FSVTask Outputs^GVL_FS_Devices.TV1K4_VFS_1.q_xVFS_Closed" AutoLink="true"/>
+				<Link VarA="PlcTask Inputs^GVL_FS_Devices.TV1K4_VFS_Interface.i_xVFS_Open" VarB="FSVTask Outputs^GVL_FS_Devices.TV1K4_VFS_1.q_xVFS_Open" AutoLink="true"/>
 				<Link VarA="PlcTask Outputs^GVL_FS_Devices.MR3K4_KBO_VFS_Interface.q_xCLS_SW" VarB="FSVTask Inputs^GVL_FS_Devices.MR3K4_KBO_VFS_1.i_xCLS_SW" AutoLink="true"/>
 				<Link VarA="PlcTask Outputs^GVL_FS_Devices.MR3K4_KBO_VFS_Interface.q_xOPN_SW" VarB="FSVTask Inputs^GVL_FS_Devices.MR3K4_KBO_VFS_1.i_xOPN_SW" AutoLink="true"/>
 				<Link VarA="PlcTask Outputs^GVL_FS_Devices.MR3K4_KBO_VFS_Interface.q_xOverrideMode" VarB="FSVTask Inputs^GVL_FS_Devices.MR3K4_KBO_VFS_1.i_xOverrideMode" AutoLink="true"/>
