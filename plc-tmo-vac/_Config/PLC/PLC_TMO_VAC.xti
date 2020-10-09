@@ -1483,6 +1483,41 @@
 					<Type>BOOL</Type>
 				</Var>
 				<Var>
+					<Name>GVL_Hutch_Gauges.TMO_ROUGH1_GPI_01.i_iPRESS_R</Name>
+					<Comment>
+						<![CDATA[ input Pressure // Link to analog Input]]>
+					</Comment>
+					<Type>INT</Type>
+				</Var>
+				<Var>
+					<Name>GVL_Hutch_Gauges.TMO_ROUGH1_GPI_02.i_iPRESS_R</Name>
+					<Comment>
+						<![CDATA[ input Pressure // Link to analog Input]]>
+					</Comment>
+					<Type>INT</Type>
+				</Var>
+				<Var>
+					<Name>GVL_Hutch_Gauges.TMO_ROUGH1_GPI_03.i_iPRESS_R</Name>
+					<Comment>
+						<![CDATA[ input Pressure // Link to analog Input]]>
+					</Comment>
+					<Type>INT</Type>
+				</Var>
+				<Var>
+					<Name>GVL_Hutch_Gauges.TMO_ROUGH2_GPI_01.i_iPRESS_R</Name>
+					<Comment>
+						<![CDATA[ input Pressure // Link to analog Input]]>
+					</Comment>
+					<Type>INT</Type>
+				</Var>
+				<Var>
+					<Name>GVL_Hutch_Gauges.TMO_ROUGH2_GPI_02.i_iPRESS_R</Name>
+					<Comment>
+						<![CDATA[ input Pressure // Link to analog Input]]>
+					</Comment>
+					<Type>INT</Type>
+				</Var>
+				<Var>
 					<Name>GVL_Hutch_Pumps.MR2K4_KBO_PIP_01.i_iPRESS</Name>
 					<Type>INT</Type>
 				</Var>
@@ -1780,41 +1815,6 @@
 				<Var>
 					<Name>GVL_Hutch_Valves.TMO_ROUGH2_VRC_01.i_xClsLS</Name>
 					<Type>BOOL</Type>
-				</Var>
-				<Var>
-					<Name>GVL_Hutch_Gauges.TMO_ROUGH1_GPI_01.i_iPRESS_R</Name>
-					<Comment>
-						<![CDATA[ input Pressure // Link to analog Input]]>
-					</Comment>
-					<Type>INT</Type>
-				</Var>
-				<Var>
-					<Name>GVL_Hutch_Gauges.TMO_ROUGH1_GPI_02.i_iPRESS_R</Name>
-					<Comment>
-						<![CDATA[ input Pressure // Link to analog Input]]>
-					</Comment>
-					<Type>INT</Type>
-				</Var>
-				<Var>
-					<Name>GVL_Hutch_Gauges.TMO_ROUGH1_GPI_03.i_iPRESS_R</Name>
-					<Comment>
-						<![CDATA[ input Pressure // Link to analog Input]]>
-					</Comment>
-					<Type>INT</Type>
-				</Var>
-				<Var>
-					<Name>GVL_Hutch_Gauges.TMO_ROUGH2_GPI_01.i_iPRESS_R</Name>
-					<Comment>
-						<![CDATA[ input Pressure // Link to analog Input]]>
-					</Comment>
-					<Type>INT</Type>
-				</Var>
-				<Var>
-					<Name>GVL_Hutch_Gauges.TMO_ROUGH2_GPI_02.i_iPRESS_R</Name>
-					<Comment>
-						<![CDATA[ input Pressure // Link to analog Input]]>
-					</Comment>
-					<Type>INT</Type>
 				</Var>
 			</Vars>
 			<Vars VarGrpType="2">
