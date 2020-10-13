@@ -70,11 +70,11 @@ xTurboFault := ton_PA1K4_IP1_PTM_01_notRunning.Q OR ton_PA1K4_IP1_PTM_02_notRunn
 				OR NOT lamp_turbo_running_reader.bBool;
 
 (* check beamline valve OPEN permit *)	
-xValves_are_OPN_OK :=  MR2K4_KBO_VWC_01.iq_stValve.xOPN_OK AND MR3K4_KBO_VWC_01.iq_stValve.xOPN_OK AND
-                       LI3K4_IP1_VWC_01.iq_stValve.xOPN_OK AND PC5K4_VWC_01.iq_stValve.xOPN_OK ;  
+(*xValves_are_OPN_OK :=  MR2K4_KBO_VWC_01.iq_stValve.xOPN_OK AND MR3K4_KBO_VWC_01.iq_stValve.xOPN_OK AND
+                       LI3K4_IP1_VWC_01.iq_stValve.xOPN_OK AND PC5K4_VWC_01.iq_stValve.xOPN_OK ; *) 
 
 (*if not all beamline valves are OPN_OK, close all beamline valves*)
-IF NOT xValves_are_OPN_OK Then
+(*IF NOT xValves_are_OPN_OK Then
 	MR2K4_KBO_VWC_01.M_Set_OPN_SW(false);	
 	MR3K4_KBO_VWC_01.M_Set_OPN_SW(false);
 	LI3K4_IP1_VWC_01.M_Set_OPN_SW(false);
@@ -83,7 +83,7 @@ IF NOT xValves_are_OPN_OK Then
 ElSE
    xBeamlineValveFault := False;	
 END_IF
-					   
+*)					   
    
 					 
 

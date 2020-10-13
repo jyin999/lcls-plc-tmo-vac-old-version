@@ -2503,6 +2503,7 @@
 			</OwnerB>
 			<OwnerB Name="TIID^Device 1 (EtherCAT)^B940-R20-CX0 (EK1200)^CX0_E1A (EL2202)">
 				<Link VarA="FSVTask Outputs^GVL_FSV_PMPS.g_FastFaultOutput3.q_xFastFaultOut" VarB="Channel 1^Output" AutoLink="true"/>
+				<Link VarA="FSVTask Outputs^GVL_FSV_PMPS.g_FastFaultOutput4.q_xFastFaultOut" VarB="Channel 2^Output" AutoLink="true"/>
 			</OwnerB>
 			<OwnerB Name="TIID^Device 1 (EtherCAT)^B940-R20-CX0 (EK1200)^CX0_E2_EXILK (EL1008)">
 				<Link VarA="PlcTask Inputs^GVL_FEE_Device.USVacOk_HI" VarB="Channel 1^Input" AutoLink="true"/>

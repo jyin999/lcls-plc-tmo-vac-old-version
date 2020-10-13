@@ -31,10 +31,12 @@ MR4K4_KBO_VFS_1(
 (*FastFaultOuput*)	
 g_FastFaultOutput3.Execute(bAutoReset:= TRUE);
 
-//g_FastFaultOutput4.q_xFastFaultOut R= NOT g_FastFaultOutput3.q_xFastFaultOut;
-fastFaultSaveMyLife(i_xOK := g_FastFaultOutput3.q_xFastFaultOut, i_xAutoReset := TRUE, io_fbFFHWO:=g_FastFaultOutput4);
+g_FastFaultOutput4.Execute(i_xVeto:=PMPS_GVL.stCurrentBeamParameters.aStoppers[K_Stopper.ST3K4], bAutoReset:= TRUE);
 
-g_FastFaultOutput4.Execute(bAutoReset:= TRUE);
+//g_FastFaultOutput4.q_xFastFaultOut R= NOT g_FastFaultOutput3.q_xFastFaultOut;
+//fastFaultSaveMyLife(i_xOK := g_FastFaultOutput3.q_xFastFaultOut, i_xAutoReset := TRUE, io_fbFFHWO:=g_FastFaultOutput4);
+
+//g_FastFaultOutput4.Execute(bAutoReset:= TRUE);
 
 ]]></ST>
     </Implementation>
@@ -45,7 +47,10 @@ g_FastFaultOutput4.Execute(bAutoReset:= TRUE);
       <LineId Id="30" Count="0" />
       <LineId Id="25" Count="0" />
       <LineId Id="6" Count="13" />
-      <LineId Id="46" Count="3" />
+      <LineId Id="46" Count="0" />
+      <LineId Id="55" Count="0" />
+      <LineId Id="54" Count="0" />
+      <LineId Id="47" Count="2" />
       <LineId Id="35" Count="0" />
       <LineId Id="34" Count="0" />
       <LineId Id="42" Count="0" />
