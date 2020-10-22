@@ -64,12 +64,14 @@ GEM1_VGC_10(i_stUSG := USG_GCC.IG, i_stDSG:= GEM1_GCC_10.IG,i_xDis_DPIlk := TRUE
 				i_stDSG:= TV1k4_GCC_01.IG, 
 				i_xDis_DPIlk := FALSE, 
 				i_xEPS_OK := TRUE,
-				i_xPMPS_OK := TRUE, 
+				i_xPMPS_OK := , 
 				i_xExt_OK := TRUE, 
 				i_xOverrideMode := xSystemOverrideMode_FEE, 
 				i_xReset := xReset_PMPS_FFO1,
 				io_fbFFHWO :=g_FastFaultOutput1,
-				fbArbiter := g_fbArbiter1
+				iq_stValve =>,
+				fbArbiter := g_fbArbiter1,
+				i_nTransitionRootID := 2801
 );
 	
  	TV1K4_VGC_02(
@@ -77,25 +79,32 @@ GEM1_VGC_10(i_stUSG := USG_GCC.IG, i_stDSG:= GEM1_GCC_10.IG,i_xDis_DPIlk := TRUE
 				i_stDSG:= ST1K4_TEST_GCC_01.IG, 
 				i_xDis_DPIlk := FALSE, 
 				i_xEPS_OK := TRUE,
-				i_xPMPS_OK := TRUE, 
+				i_xPMPS_OK := , 
 				i_xExt_OK := TRUE, 
 				i_xOverrideMode := xSystemOverrideMode_FEE, 
 				i_xReset := xReset_PMPS_FFO1,
 				io_fbFFHWO :=g_FastFaultOutput1,
-                fbArbiter := g_fbArbiter1);
+				iq_stValve =>,
+                fbArbiter := g_fbArbiter1,
+				i_nTransitionRootID := 2802
+				
+);
 	
 	ST3K4_PPS_VGC_01(
 				i_stUSG := ST2K4_BCS_GCC_01.IG, 
 				i_stDSG:= PC4K4_XTES_PIP_01.q_IG, 
 				i_xDis_DPIlk := FALSE, 
 				i_xEPS_OK := TRUE,
-				i_xPMPS_OK := TRUE, 
+				i_xPMPS_OK := , 
 				i_xExt_OK := TRUE, 
 				i_xOverrideMode := xSystemOverrideMode_FEE, 
 				i_xReset := xReset_PMPS_FFO2,
 				io_fbFFHWO :=g_FastFaultOutput2,
-                fbArbiter := g_fbArbiter1);
-				
+				iq_stValve =>,
+                fbArbiter := g_fbArbiter1,
+				i_nTransitionRootID := 2803
+);
+			
 (*Ion Pumps*)	
 	(*example
 	SP1L0_KMONO_PIP_01(i_stGauge:=SP1L0_KMONO_GCC_01.IG, stPump=>);*)		
@@ -108,9 +117,23 @@ GEM1_VGC_10(i_stUSG := USG_GCC.IG, i_stDSG:= GEM1_GCC_10.IG,i_xDis_DPIlk := TRUE
 			]]></ST>
     </Implementation>
     <LineIds Name="PRG_FEE">
-      <LineId Id="3" Count="54" />
+      <LineId Id="3" Count="53" />
+      <LineId Id="137" Count="0" />
+      <LineId Id="57" Count="0" />
+      <LineId Id="130" Count="0" />
       <LineId Id="104" Count="0" />
-      <LineId Id="58" Count="33" />
+      <LineId Id="58" Count="10" />
+      <LineId Id="136" Count="0" />
+      <LineId Id="69" Count="0" />
+      <LineId Id="132" Count="0" />
+      <LineId Id="135" Count="0" />
+      <LineId Id="131" Count="0" />
+      <LineId Id="70" Count="10" />
+      <LineId Id="134" Count="0" />
+      <LineId Id="81" Count="0" />
+      <LineId Id="117" Count="0" />
+      <LineId Id="133" Count="0" />
+      <LineId Id="82" Count="9" />
       <LineId Id="2" Count="0" />
     </LineIds>
   </POU>
