@@ -66,7 +66,7 @@
     <Compile Include="POUs\PMPS.TcPOU">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="POUs\POU.TcPOU">
+    <Compile Include="POUs\PRG_Hutch_Ion_Pumps.TcPOU">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="POUs\PRG_ADS_Interfaces.TcPOU">
