@@ -71,7 +71,7 @@ GEM1_VGC_10(i_stUSG := USG_GCC.IG, i_stDSG:= GEM1_GCC_10.IG,i_xDis_DPIlk := TRUE
 				io_fbFFHWO :=g_FastFaultOutput1,
 				iq_stValve =>,
 				fbArbiter := g_fbArbiter1,
-				i_nTransitionRootID := 2801
+				i_nTransitionRootID := 44816
 );
 	
  	TV1K4_VGC_02(
@@ -86,7 +86,7 @@ GEM1_VGC_10(i_stUSG := USG_GCC.IG, i_stDSG:= GEM1_GCC_10.IG,i_xDis_DPIlk := TRUE
 				io_fbFFHWO :=g_FastFaultOutput1,
 				iq_stValve =>,
                 fbArbiter := g_fbArbiter1,
-				i_nTransitionRootID := 2802
+				i_nTransitionRootID := 44832
 				
 );
 	
@@ -102,7 +102,7 @@ GEM1_VGC_10(i_stUSG := USG_GCC.IG, i_stDSG:= GEM1_GCC_10.IG,i_xDis_DPIlk := TRUE
 				io_fbFFHWO :=g_FastFaultOutput2,
 				iq_stValve =>,
                 fbArbiter := g_fbArbiter1,
-				i_nTransitionRootID := 2803
+				i_nTransitionRootID := 44848
 );
 			
 (*Ion Pumps*)	
